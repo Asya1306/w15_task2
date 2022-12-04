@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="assets/style/normalize.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="#">
+            <h1>Регистрация:</h1>
+            <div class="block-form name">
+                <label for="name">Введите имя:</label>
+                <input type="text" id="name" placeholder="Имя">
+            </div>
+            <div class="block-form gender">
+                <label>Ваш пол:</label>
+                <input type="radio" name="radio" id="man">
+                <label for="man">Мужчина</label>
+                <input type="radio" name="radio" id="woman">
+                <label for="woman">Женщина</label>
+            </div>
+            <div class="block-form dob">
+                <label for="date">Дата рождения:</label>
+                <input type="date" id="date">
+            </div>
+            <div class="block-form tel">
+                <label for="telephone">Ваш телефон:</label>
+                <input type="tel" id="telephone" placeholder="8 (900) 123-45-67">
+            </div>
+            <div class="block-form country">
+                <label for="country">Место рождения:</label>
+                <select name="country" id="country">
+                    <option disabled selected>Выберете страну</option>
+                    <option value="Russia">Россия</option>
+                    <option value="Belarus">Белоруссия</option>
+                    <option value="Ukraine">Украина</option>
+                    <option value="Kazakhstan">Казахстан</option>
+                    <option value="Georgia">Грузия</option>
+                </select>
+            </div>
+            <!-- количество символов от 5 и заполняемость  -->
+            <div class="block-form password">
+                <label for="password">Введите пароль:</label>
+                <input type="password" id="password" placeholder="Пароль">
+            </div>
+            <!-- блок ошибка -->
+            <div id="errorMessage" class="block-form errorMessage"></div>
+            <!-- кнопка с проверкой -->
+            <button onclick="check()">Отправить</button>
+        </form>
+    </div>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
